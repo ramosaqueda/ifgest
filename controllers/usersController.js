@@ -34,7 +34,7 @@ const usuariosPut = (req=request, res = response) => {
     res.json({
         msg: 'put API - usuariosPut',
         name,
-        edad
+        edad//eso
     });
 }
 
