@@ -26,13 +26,15 @@ const usuariosPost = (req, res = response) => {
     });
 }
 
-const usuariosPut = (req, res = response) => {
+const usuariosPut = (req=request, res = response) => {
 
     const { id } = req.params;
+    const{name='noname', edad='no definido'} = req.query;
 
     res.json({
         msg: 'put API - usuariosPut',
-        id
+        name,
+        edad
     });
 }
 

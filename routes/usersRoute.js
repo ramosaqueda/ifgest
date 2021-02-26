@@ -3,7 +3,7 @@ const {usuariosGet,usuariosDelete,usuariosPut,usuariosPatch,usuariosPost} = requ
 const router = Router();
 
 router.get('/',  usuariosGet);
-router.put('/',  usuariosPut);
+router.put('/:id',  usuariosPut);
 router.delete('/',  usuariosDelete);
 router.patch('/',  usuariosPatch);
 router.post('/',  usuariosPost);
